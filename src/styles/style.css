@@ -100,8 +100,9 @@ h3 {
 }
 
 .btn {
-  width: 148px;
-  height: 49px;
+  width: 150px;
+  height: 50px;
+  padding: 12px 24px;
   
   font-weight: 700;
   color: var(--white);
