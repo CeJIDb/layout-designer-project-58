@@ -33,10 +33,14 @@ html {
 
 body {
   width: 1440px;
+  margin: 0;
+
   background: var(--white);
 }
 
-h1, h2, h3 {
+.title-1,
+.title-2,
+.title-3 {
   margin: 0;
   padding: 0;
 
@@ -45,16 +49,32 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
-h1 {
+.title-1 {
   font-size: 72px;
 }
 
-h2 {
+.title-2 {
   font-size: 60px;
 }
 
-h3 {
+.title-3 {
   font-size: 34px;
+}
+
+.title-4 {
+  margin: 0;
+  padding: 5px 10px;
+
+  font: 14px/1.2em "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin: 0;
+
+  font: 24px/1.2em Neucha, sans-serif;
+  color: var(--dark-50);
 }
 
 .bg-img::before {
@@ -73,14 +93,13 @@ h3 {
 }
 
 .content {
+  position: relative;
+  z-index: 10;
+
   width: 1110px;
   padding: 100px 0;
 
   border: 1px solid green;
-}
-
-.text-block {
-  gap: 30px;
 }
 
 .btn {
@@ -130,7 +149,6 @@ div[class*="-side"] {
 .video {
   position: relative;
   top: 200px;
-  z-index: 10;
   
   display: block;
   margin: -200px auto 0;
@@ -166,11 +184,11 @@ div[class*="-side"] {
   cursor: pointer;
 }
 
-.nav-item > a > h2 {
-  margin-bottom: 40px;
+.nav-item > a > .number {
+  margin: 0 0 40px;
 
-  font-size: 64px;
-  line-height: 1em;
+  font: 64px/1em Neucha, sans-serif;
+  color: var(--primary-dark);
 }
 
 .p-relative {
@@ -181,7 +199,7 @@ div[class*="-side"] {
   display: flex;
 }
 
-.flex-column {
+.f-column {
   flex-direction: column;
 }
 
@@ -189,8 +207,16 @@ div[class*="-side"] {
   justify-content: center;
 }
 
+.ai-center {
+  align-items: center;
+}
+
 .f-wrap {
   flex-wrap: wrap;
+}
+
+.gap-30 {
+  gap: 30px;
 }
 
 .ta-center {
@@ -219,6 +245,10 @@ div[class*="-side"] {
 
 .c-white {
   color: var(--white);
+}
+
+.c-brown {
+  color: var(--brown);
 }
 
 .bg-light {

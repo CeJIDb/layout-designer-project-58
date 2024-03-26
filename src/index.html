@@ -10,10 +10,10 @@
 </head>
 <body>
     <header class="section-header bg-light bg-img">
-        <div class="content p-relative">
-            <h1><span class="c-primary">Когнитивные<br>искажения</span><br>в программировании</h1>
+        <div class="content">
+            <h1 class="title-1"><span class="c-primary">Когнитивные<br>искажения</span><br>в программировании</h1>
             <img src="./assets/img/main.png" alt="Тота сидит за ноутбуком">
-            <div class="text-block d-flex">
+            <div class="text-block d-flex gap-30">
                 <div class="left-side">
                     <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.</p>
                 </div>
@@ -29,55 +29,76 @@
     <main class="main">
         <section class="section-video bg-white">
             <div class="content ta-center">
-                <h2 class="mb-30">Что же такое,<br><span class="c-primary">когнитивные искажения?</span></h2>
+                <h2 class="title-2 mb-30">Что же такое,<br><span class="c-primary">когнитивные искажения?</span></h2>
                 <p class="mb-30">Что такое когнитивные искажения. Petrovna Channel</p>
                 <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
 
         <nav id="navigation" class="section-navigation bg-primary-dark">
-            <div class="content mt-100 p-relative zi-t d-flex j-center f-wrap">
-                <h2 class="nav-header c-white"><span class="c-primary">5 когнитивных искажений<br></span>о существовании которых стоит помнить</h2>
+            <div class="content mt-100 d-flex j-center f-wrap">
+                <h2 class="title-2 nav-header c-white"><span class="c-primary">5 когнитивных искажений<br></span>о существовании которых стоит помнить</h2>
                 <div class="nav-item bg-light">
                     <a href="#ikea-effect">
-                        <h2>1</h2>
-                        <h3 class="c-primary">Эффект ИКЕА</h3>
+                        <p class="number">1</p>
+                        <h3 class="title-3 c-primary">Эффект ИКЕА</h3>
                         <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
                     </a>
                 </div>
                 <div class="nav-item bg-light">
                     <a href="#premature-opt">
-                        <h2>2</h2>
-                        <h3 class="c-primary">Преждевременная оптимизация</h3>
+                        <p class="number">2</p>
+                        <h3 class="title-3 c-primary">Преждевременная оптимизация</h3>
                         <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
                     </a>
                 </div>
                 <div class="nav-item bg-light">
                     <a href="#distortion-of-novelty">
-                        <h2>3</h2>
-                        <h3 class="c-primary">Искажение новизны</h3>
+                        <p class="number">3</p>
+                        <h3 class="title-3 c-primary">Искажение новизны</h3>
                         <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
                     </a>
                 </div>
                 <div class="nav-item bg-light">
                     <a href="#hyperbolic-depreciation">
-                        <h2>4</h2>
-                        <h3 class="c-primary">Гиперболическое обесценивание</h3>
+                        <p class="number">4</p>
+                        <h3 class="title-3 c-primary">Гиперболическое обесценивание</h3>
                         <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
                     </a>
                 </div>
                 <div class="nav-item bg-light">
                     <a href="#errors-in-planning">
-                        <h2>5</h2>
-                        <h3 class="c-primary">Ошибка планирования</h3>
+                        <p class="number">5</p>
+                        <h3 class="title-3 c-primary">Ошибка планирования</h3>
                         <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
                     </a>
                 </div>
             </div>
         </nav>
 
-        <section id="ikea-effect" class="section-ikea-effect bg-img bg-light h-900">
-            <h1>asd</h1>
+        <section id="ikea-effect" class="section-ikea-effect bg-img bg-light">
+            <div class="content">
+                <div class="part-top d-flex j-center gap-30">
+                    <img width="578px" height="434px" src="/src/assets/img/1.png" alt="Эффект ИКЕА">
+                    <div class="text-container">
+                        <p class="subtitle">Когнитивные искажения</p>
+                        <h2 class="title-2 mb-30">Эффект ИКЕА</h2>
+                        <p class="title-3">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
+                    </div>
+                </div>
+                <div class="part-bot mt-100">
+                    <h3 class="title-4 c-white bg-brown">Как проявляется</h3>
+                    <div class="text-block d-flex gap-30">
+                        <div class="left-side">
+                            <p>Когнитивное искажение называется так из-за того, что потребители зачастую предпочитают покупать товары, которые они могут собрать сами, а не уже собранные кем-то.</p>
+                        </div>
+                        <div class="right-side">
+                            <p>Мы склонны переоцнивать наши собственные решения и недооценивать решения других. Если вы когда-то работали в компании, которая использовала тупой внутренний инструмент вместо более удобного готового решения, вы понимаете, о чём я говорю.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="premature-opt" class="section-premature-opt bg-img bg-brown">
