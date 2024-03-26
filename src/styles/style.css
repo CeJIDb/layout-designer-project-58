@@ -42,6 +42,7 @@ h1, h2, h3 {
 
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
+  font-weight: 400;
 }
 
 h1 {
@@ -93,11 +94,14 @@ h3 {
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 [class*="section"] {
   position: relative;
-  z-index: -1;
+
+  display: flex;
+  justify-content: center;
 
   border: 1px solid red;
 }
@@ -126,11 +130,47 @@ div[class*="-side"] {
 .video {
   position: relative;
   top: 200px;
+  z-index: 10;
   
   display: block;
   margin: -200px auto 0;
 
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.section-navigation > .content {
+  gap: 20px 30px;
+}
+
+.nav-header,
+.nav-item {
+  flex-basis: 350px;
+
+  box-sizing: border-box;
+}
+
+.nav-header {
+  font-size: 52px;
+}
+
+.nav-item {
+  padding: 24px;
+}
+
+.nav-item > a {
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+
+  cursor: pointer;
+}
+
+.nav-item > a > h2 {
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  line-height: 1em;
 }
 
 .p-relative {
@@ -149,6 +189,10 @@ div[class*="-side"] {
   justify-content: center;
 }
 
+.f-wrap {
+  flex-wrap: wrap;
+}
+
 .ta-center {
   text-align: center;
 }
@@ -165,12 +209,16 @@ div[class*="-side"] {
   margin-top: 40px;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
 .c-primary {
   color: var(--primary);
 }
 
-.zi-b {
-  z-index: -10;
+.c-white {
+  color: var(--white);
 }
 
 .bg-light {
