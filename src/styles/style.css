@@ -1,13 +1,14 @@
 :root {
-  --white: #FFF;
-  --white-50: #D7CCC0;
-  --light: #F5F4F0;
-  --primary: #FE8A02;
-  --primary-dark: #42413C;
-  --dark: #2A2626;
-  --dark-50: #908D8B;
-  --brown: #B09A81;
-  --text: #2A2626;
+  --white: #fff;
+  --white-50: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --dark: #2a2626;
+  --dark-50: #908d8b;
+  --brown: #b09a81;
+  --text: #2a2626;
+  --btn-hover: #ea7600;
 }
 
 @font-face {
@@ -119,7 +120,7 @@ h3,
 }
 
 .btn:hover {
-  background-color: #EA7600;
+  background-color: var(--btn-hover);
 }
 
 .btn-text {
@@ -135,7 +136,6 @@ h3,
 
   display: flex;
   justify-content: center;
-  
 }
 
 .left-side,
@@ -183,7 +183,7 @@ h3,
 .video {
   position: relative;
   top: 200px;
-  
+
   display: block;
   margin: -200px auto 8px;
 
