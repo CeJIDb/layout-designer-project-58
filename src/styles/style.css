@@ -141,6 +141,7 @@ h3,
 .left-side,
 .right-side {
   max-width: 540px;
+  margin-bottom: 0;
 }
 
 .section-header {
@@ -229,7 +230,7 @@ h3,
 
 .fb-block {
   gap: 122px;
-  padding: 55px;
+  padding: 40px 55px;
 }
 
 .fb-block-form {
