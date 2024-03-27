@@ -92,6 +92,7 @@ h3,
 
   width: 100%;
   height: 100%;
+
   background-image: url("../assets/img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,11 +135,16 @@ h3,
 
   display: flex;
   justify-content: center;
+  
 }
 
 .left-side,
 .right-side {
   max-width: 540px;
+}
+
+.section-header {
+  overflow: hidden;
 }
 
 .section-header img {
