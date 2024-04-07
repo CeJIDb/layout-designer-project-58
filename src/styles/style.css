@@ -313,6 +313,10 @@ h3,
   display: flex;
 }
 
+.f-column {
+  flex-direction: column;
+}
+
 .f-rowr {
   flex-direction: row-reverse;
 }
